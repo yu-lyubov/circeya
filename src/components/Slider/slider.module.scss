@@ -1,0 +1,25 @@
+@import '../../styles/mixin';
+
+.container {
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+
+  .img {
+    width: 320px;
+    height: 490px;
+    object-fit: cover;
+
+    &:first-child {
+      @include ml_260;
+    }
+
+    &:last-child {
+      margin-right: 260px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

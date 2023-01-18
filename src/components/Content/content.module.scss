@@ -1,0 +1,42 @@
+@import '../../styles/mixin';
+
+.container {
+  margin-bottom: 160px;
+
+  .heading {
+    @include heading;
+  }
+
+  .content_block {
+    width: 1588px;
+    margin-top: 120px;
+
+    .block_one {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .photo_top {
+        width: 860px;
+        height: 480px;
+        object-fit: cover;
+        margin-right: 100px;
+      }
+    }
+
+    .block_two {
+      @include ml_260;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .photo_bottom {
+        width: 599px;
+        height: 411px;
+        object-fit: cover;
+        margin-left: 100px;
+      }
+    }
+  }
+}
