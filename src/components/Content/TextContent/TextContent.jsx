@@ -4,7 +4,7 @@ import styles from './textContent.module.scss';
 const TextContent = () => {
   return (
     <div className={styles.text_content}>
-      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
       <p>
         Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

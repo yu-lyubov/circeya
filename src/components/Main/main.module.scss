@@ -1,18 +1,25 @@
 @import '../../styles/mixin';
 
 .main_container {
-  overflow: hidden;
+  scrollbar-width: none;
 
   .pt_200 {
     padding-top: 200px;
   }
 
-  .slider_heading {
-    @include heading;
-    margin-bottom: 123px;
-  }
-
   .pt_160 {
     padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_container {
+    .pt_200 {
+      padding-top: 72px;
+    }
+
+    .pt_160 {
+      padding-top: 70px;
+    }
   }
 }

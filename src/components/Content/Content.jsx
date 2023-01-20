@@ -2,9 +2,9 @@ import React from 'react';
 import TextContent from './TextContent/TextContent';
 import styles from './content.module.scss';
 
-const Content = ({ photoTop, photoBottom }) => {
+const Content = ({ photoTop, photoBottom, mb }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${mb ? styles.mb_160 : ''}`}>
       <h1 className={styles.heading}>ut aliquip ex ea commodo consequat</h1>
       <div className={styles.content_block}>
         <div className={styles.block_one}>

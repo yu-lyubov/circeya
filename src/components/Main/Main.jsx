@@ -7,16 +7,15 @@ import PhotoThree from '../../assets/content/photo_3.jpg';
 import PhotoFour from '../../assets/content/photo_4.jpg';
 import styles from './main.module.scss';
 
-const Main = () => {
+const Main = ({ isMobile }) => {
   return (
     <div className={styles.main_container}>
       <div className={styles.pt_200}>
         <Content photoTop={PhotoOne} photoBottom={PhotoTwo} />
       </div>
-      <h1 className={styles.slider_heading}>Lorem ipsum dolor sit amet</h1>
-      <Slider />
+      <Slider isMobile={isMobile} />
       <div className={styles.pt_160}>
-        <Content photoTop={PhotoThree} photoBottom={PhotoFour} />
+        <Content photoTop={PhotoThree} photoBottom={PhotoFour} mb />
       </div>
     </div>
   );
