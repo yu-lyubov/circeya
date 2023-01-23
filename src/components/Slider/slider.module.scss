@@ -35,18 +35,12 @@
           object-fit: cover;
 
           &:first-child {
-            @include ml_260;
+            padding-left: 260px;
           }
 
           &:last-child {
-            margin-right: 260px;
+            padding-right: 260px;
           }
-        }
-
-        .emptyGap {
-          min-width: 320px;
-          width: 320px;
-          height: 490px;
         }
 
         &::-webkit-scrollbar {

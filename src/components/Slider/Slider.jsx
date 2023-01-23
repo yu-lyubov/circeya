@@ -14,8 +14,7 @@ const Slider = ({isMobile}) => {
       const ct = container.current.getBoundingClientRect();
       wrapper.current.scrollLeft = -ct.top;
 
-      // dynamically changing height of container
-      container.current.style.height = `${(IMG_COUNT + 5) * 320 + (IMG_COUNT - 3) * 40 - container.current.clientWidth}px`;
+      container.current.style.height = `${(IMG_COUNT + 3) * 320 + (IMG_COUNT - 1) * 40 + 520 - container.current.clientWidth}px`;
     });
 
     document.addEventListener('scroll', () => {
@@ -43,7 +42,6 @@ const Slider = ({isMobile}) => {
                   />
                 )
               })}
-              <div className={styles.emptyGap}/>
             </div>
           </div>
         </div>
