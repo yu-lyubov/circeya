@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, #464341 0%, #010101 100%);
+  height: 100px;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+
+    .phone_number {
+      font-family: "Manrope", sans-serif;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .phone {
+      display: none;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 60px;
+
+    .wrapper {
+      padding: 18px 20px;
+      box-sizing: border-box;
+
+      .logo {
+        width: 119px;
+        height: 20px;
+      }
+
+      .phone_number {
+        display: none;
+      }
+
+      .phone {
+        display: block;
+      }
+    }
+  }
+}

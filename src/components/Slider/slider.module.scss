@@ -1,0 +1,91 @@
+@import '../../styles/mixin';
+
+.main_container {
+  position: relative;
+
+  .scrollable {
+    padding-top: 160px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    .heading {
+      @include heading;
+      margin-bottom: 123px;
+    }
+
+    .wrapper {
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      position: relative;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .img {
+          width: 320px;
+          height: 490px;
+          object-fit: cover;
+
+          &:first-child {
+            padding-left: 260px;
+          }
+
+          &:last-child {
+            padding-right: 260px;
+          }
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.mobile_container {
+  display: none;
+  padding-top: 70px;
+
+  .mobile_heading {
+    @include heading-375;
+    margin-bottom: 56px;
+  }
+
+  .mobile_slider {
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0 20px;
+
+    .mobile_img {
+      width: 225px;
+      height: 345px;
+      object-fit: cover;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_container {
+    display: none;
+  }
+
+  .mobile_container {
+    display: block;
+  }
+}

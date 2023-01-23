@@ -1,0 +1,25 @@
+@import './color';
+
+@mixin ml_260 {
+  margin: 0 0 0 260px;
+}
+
+@mixin heading {
+  @include ml_260;
+  font-family: 'Orchidea Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: $primary-text;
+}
+
+@mixin heading-375 {
+  font-family: 'Orchidea Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 20px;
+  width: 210px;
+  color: $primary-text;
+}
